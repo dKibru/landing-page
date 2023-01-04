@@ -7,6 +7,11 @@
     <title>Landing Page</title>
 </head>
 <body>
-    <h1>Landing page</h1>
+    <h1>Landing page of <span id="hostname"></span></h1>
+
+    <script>
+        const hostname = window.location.hostname;
+        document.getElementById("hostname").innerHTML = hostname;
+    </script>
 </body>
 </html>
